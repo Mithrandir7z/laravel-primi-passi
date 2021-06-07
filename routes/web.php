@@ -14,5 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return 'Hello world!';
+    return view('home');
+});
+
+Route::get('/articoli', function () {
+    return view('articoli');
+});
+
+Route::get('/video', function () {
+    return view('video');
+});
+
+Route::get('/impostazioni', function () {
+    return view('impostazioni');
 });
